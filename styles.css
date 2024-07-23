@@ -160,7 +160,7 @@ button.resume:active {
     opacity: 0;
     z-index: 999;
     transform: translateY(-10px);
-    transition: transform 0.3s, opacity 0.3s;
+    transition:  ease-in-out 0.35s, ease-in-out 0.3s;
 }
 
 /* When the nav is shown, show the border bar */
@@ -215,6 +215,7 @@ button.resume:active {
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        transition: ease-in-out .35s;
     }
 
     .nav_list {
