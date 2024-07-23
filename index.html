@@ -17,11 +17,11 @@
                 <a id="logo-anch" href="#"><img src="imgs/Logo-transparent.png" alt="Jaydon Hodge portfolio logo"></a>
             </div>
             <!---------------NAVIGATION BAR---------->
-            <nav class="nav" role="navigation">
+            <nav class="nav" id="nav-menu" role="navigation">
 
                 <!---------------NAVIGATION SECTION---------->
                 <div class="container">
-                    <ul>
+                    <ul class="nav_list">
                         <li>
                             <a href="#home" class="page-links"><span class="nums">01.</span><span class="items">About</span></a>
                         </li>                
@@ -41,6 +41,8 @@
                 </div>
             </nav>
             
+            <div class="border-bar" id="border-bar"></div>
+            <ion-icon name="menu-outline" class="header_toggle" id="toggle-menu"></ion-icon>
         </header>
         <main>
             <!---------------HOME SECTION-------->
@@ -62,5 +64,9 @@
     
             </section>
         </main>
+        <!---------JavaScript IMPORTS-------->
+        <script src = "js/custom.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
