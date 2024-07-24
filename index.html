@@ -14,7 +14,7 @@
         <header class="header">
             <!---------------LOGO-------->
             <div class="logo">
-                <a id="logo-anch" href="#"><img src="imgs/Logo-transparent.png" alt="Jaydon Hodge portfolio logo"></a>
+                <a id="logo-anch" href="#home"><img src="imgs/Logo-transparent.png" alt="Jaydon Hodge portfolio logo"></a>
             </div>
             <!---------------NAVIGATION BAR---------->
             <nav class="nav" id="nav-menu" role="navigation">
@@ -23,7 +23,7 @@
                 <div class="container">
                     <ul class="nav_list">
                         <li>
-                            <a href="#home" class="page-links"><span class="nums">01.</span><span class="items">About</span></a>
+                            <a href="#about" class="page-links"><span class="nums">01.</span><span class="items">About</span></a>
                         </li>                
                         <li>
                             <a href="#projects" class="page-links"><span class="nums">02.</span><span class="items">Projects</span></a>
@@ -35,7 +35,7 @@
                             <a href="#blog" class="page-links"><span class="nums">04.</span><span class="items">Blog</span></a>
                         </li>
                         <li>
-                            <button class="resume" onclick="window.open('JaydonHodge-resume.pdf', '_blank')">Resume</button>
+                            <button class="resume" id="resume" onclick="window.open('JaydonHodge-resume.pdf', '_blank')">Resume</button>
                         </li>
                     </ul>
                 </div>
@@ -48,8 +48,13 @@
             <!---------------HOME SECTION-------->
             <section role="region" id="home">
                 <p>Hi, my name is</p>
-                <h1>Jaydon Hodge.</h1>
-                <h1>I also go by "Yajenio" :)</h1>
+                <h1 id="name">Jaydon Hodge.</h1>
+                <h1 id="alt-name">I also go by "Yajenio"</h1>
+                <h1 id="joke-intro">I'm a CMPSC student by day, and a CMPSC enthusiast also by day <ion-icon name="happy-outline"></ion-icon></h1>
+            </section>
+            <!----------------ABOUT SECTION------>
+            <section role="region" id="about">
+                <h1>About Me</h1>
             </section>
             <!---------------PROJECTS SECTION--------->
             <section role ="region" id="projects">
