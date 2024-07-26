@@ -107,7 +107,7 @@ nav > div > ul {
     width: 0;
     height: 2px;
     background-color: #E06C75;
-    margin-left: 4px;
+    margin-left: 3.6px;
     transition: ease-in-out .3s;
 }
 
@@ -330,11 +330,10 @@ main {
 /* ------Divider------ */
 .divider {
     margin-top: 12rem;
-    margin-left: 5rem;
+    margin-left: 4.8rem;
     width: 90%;
     height: 3px;
     background-color: #20222c;
-    left: 0;
     z-index: 999;
 }
 
@@ -350,4 +349,26 @@ main {
 
 #about .highlight {
     color: #E06C75;
+}
+
+#about .italic {
+    font-style: italic;
+}
+
+#about .about-description {
+    width: 40rem;
+    margin: 2.5rem 0 0 0;
+}
+
+#about .about-description > p {
+    color: #8892b0;
+}
+
+#about .free-time {
+    width: 40rem;
+    margin: 1.5rem 0 0 0;
+}
+
+#about .free-time > p {
+    color: #8892b0;
 }
