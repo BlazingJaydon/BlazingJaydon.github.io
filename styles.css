@@ -16,6 +16,10 @@ body {
     margin: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 /* -----NAVIGATION BAR----- */
 .header {
     position: fixed;
@@ -45,8 +49,8 @@ body {
 }
 
 .header .logo a > img {
-    width: 60px;
-    height: 50px;
+    width: 3.8rem;
+    height: 3rem;
     transform: translateX(-0.5rem);
 }
 
@@ -160,7 +164,7 @@ button.resume {
     border: 2px solid rgb(224, 108, 117);
     line-height: 2.5;
     padding: 0 10px;
-    font-size: medium;
+    font-size: 1rem;
     text-align: center;
     color: #ccd6f6;
     border-radius: 5px;
