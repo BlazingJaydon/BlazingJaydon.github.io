@@ -10,7 +10,6 @@ var navToggles=document.getElementsByClassName('page-links');
 toggleMenu.addEventListener('click',() => {
     navMenu.classList.toggle('show');
     borderBar.classList.toggle('show');
-
 })
 
 resumeButton.addEventListener('click',() => {
