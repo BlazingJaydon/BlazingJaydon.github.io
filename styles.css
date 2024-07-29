@@ -55,7 +55,7 @@ body {
     transform: translate(-2px, -2px);
     box-shadow: rgba(224, 108, 117, 0.4) 0.12rem 0.08rem,
                 rgba(224, 108, 117, 0.3) 0.14rem 0.12rem, 
-                rgba(224, 108, 117, 0.2) 0.16rem 0.2rem;
+                rgba(224, 108, 117, 0.2) 0.16rem 0.16rem;
 }
 
 .logo:active {
@@ -99,7 +99,7 @@ nav > div > ul {
     position: relative;
 }
 
-.nav li > a.page-links::before {
+.nav li > a::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -107,11 +107,35 @@ nav > div > ul {
     width: 0;
     height: 2px;
     background-color: #E06C75;
-    margin-left: 3.6px;
+    margin-left: 4px;
     transition: ease-in-out .3s;
 }
 
-.nav li > a:hover::before {
+.nav li > a.contact::before {
+    transform: translateX(0.5px);
+}
+
+.nav li > a.projects::before {
+    transform: translateX(0.5px);
+}
+
+.nav li > a.experience::before {
+    transform: translateX(0.5px);
+}
+
+.nav li > a.about:hover::before {
+    width: 92%;
+}
+
+.nav li > a.projects:hover::before {
+    width: 93.8%;
+}
+
+.nav li > a.contact:hover::before {
+    width: 92.8%;
+}
+
+.nav li > a.experience:hover::before {
     width: 95%;
 }
 
@@ -152,7 +176,7 @@ button.resume:hover {
     transform: translate(-2px, -2px);
     box-shadow: rgba(224, 108, 117, 0.4) 0.12rem 0.08rem,
                 rgba(224, 108, 117, 0.3) 0.14rem 0.12rem, 
-                rgba(224, 108, 117, 0.2) 0.16rem 0.2rem;
+                rgba(224, 108, 117, 0.2) 0.16rem 0.16rem;
     color: #E06C75;
 }
 
@@ -187,7 +211,7 @@ button.resume:active {
     transform: translateY(2rem);
 }
 
-/* ----Navigation Bar Media Queries---- */
+/* ----Small-Screen Navigation Bar Media Queries---- */
 @media screen and (max-width: 770px) {
     .header {
         justify-content: space-between;
@@ -223,7 +247,6 @@ button.resume:active {
         color: #ccd6f6;
         width: 100%;
         height: 60vh;
-        transition: 0.5s;
         align-items: center;
         flex-direction: column;
         justify-content: center;
@@ -328,21 +351,44 @@ button.resume:active {
     /* ------Divider------ */
     .divider {
         margin-top: 15vh;
-        margin-left: 4.8vw;
+        margin-left: 5vw;
         width: 90%;
         height: 3px;
         background-color: #20222c;
-        z-index: 999;
+        z-index: 100;
     }
 
     /* ------About------ */
     #about {
         margin: 0 0 0 200px;
         padding: 7em 0 0 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about .section-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    #about .section-divider {
+        width: 33%;
+        height: 1px;
+        background-color: #8892b0;
+        z-index: 100;
+    }
+
+    #about .section-content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
     }
 
     #about h1 {
         color: #ccd6f6;
+        margin-right: 20px;
     }
 
     #about .highlight {
@@ -357,6 +403,7 @@ button.resume:active {
     #about .about-description {
         width: 40em;
         margin: 2.5em 0 0 0;
+        display: flex;
     }
 
     #about .about-description > p {
@@ -366,12 +413,60 @@ button.resume:active {
     #about .free-time {
         width: 40em;
         margin: 1.5em 0 0 0;
+        display: flex;
     }
 
     #about .free-time > p {
         color: #8892b0;
     }
 
+    #about .headshot img {
+        display: inline-flex;
+        z-index: 100;
+        width: 255px;
+        height: 255px;
+        border-radius: 5px;
+        transform: translate(50px, 25px);
+        padding: 5px;
+        border: 2px solid #E06C75;
+    }
+
+    #about #MEEE {
+        color: rgb(204, 214, 246);
+        opacity: 0;
+        position: relative;
+        top: -100px;
+        left: -170px;
+        display: inline-flex;
+        transition: ease-in-out .5s;
+    }
+
+    .show2 {
+        transform: translateX(210px);
+    }
+
+    #about #headshot-arrow {
+        z-index: 1;
+        top: 2px;
+        position: relative;
+    }
+
+    #about #arrowww {
+        position: relative;
+        top: 10px;
+    }
+
+    #about #MEEE-sizing {
+        position: relative;
+        width: 300px;
+        /* top: -10px; */
+        margin-left: 5px;
+    }
+
+    #about .MEEE:hover {
+        display: inline-flex;
+        transform: translate(50px, 50px);
+    }
 }
 
 /* ------1920x1080p Screen-Size Media Queries------ */

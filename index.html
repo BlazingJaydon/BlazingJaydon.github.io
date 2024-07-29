@@ -23,16 +23,16 @@
                 <div class="container">
                     <ul class="nav_list">
                         <li>
-                            <a href="#about" class="page-links"><span class="nums">01.</span><span class="items">About</span></a>
+                            <a href="#about" class="page-links about"><span class="nums">01.</span><span class="items">About</span></a>
                         </li>                
                         <li>
-                            <a href="#projects" class="page-links"><span class="nums">02.</span><span class="items">Projects</span></a>
+                            <a href="#projects" class="page-links projects"><span class="nums">02.</span><span class="items">Projects</span></a>
                         </li>
                         <li>
-                            <a href="#contact" class="page-links"><span class="nums">03.</span><span class="items">Contact</span></a>
+                            <a href="#contact" class="page-links experience"><span class="nums">03.</span><span class="items">Experience</span></a>
                         </li>
                         <li>
-                            <a href="#blog" class="page-links"><span class="nums">04.</span><span class="items">Blog</span></a>
+                            <a href="#blog" class="page-links contact"><span class="nums">04.</span><span class="items">Contact</span></a>
                         </li>
                         <li>
                             <button class="resume" id="resume" onclick="window.open('JaydonHodge-resume.pdf', '_blank')">Resume</button>
@@ -40,7 +40,6 @@
                     </ul>
                 </div>
             </nav>
-            
             <div class="border-bar" id="border-bar"></div>
             <ion-icon name="menu-outline" class="header_toggle" id="toggle-menu"></ion-icon>
         </header>
@@ -67,19 +66,30 @@
             <!----------------ABOUT SECTION------>
             <div class="divider"></div> 
             <section role="region" id="about">
-                <h1><span class="highlight">01.</span> About Me</h1>
-                <div class="about-description">
-                    <p>
-                        Hey there! My name is Jaydon and I'm currently a fourth year student at the <span class="highlight">Pennsylvania State University</span> pursuing a Bachelor of Science 
-                        in <span class="italic"><span class="highlight">Computer Science</span></span> as well as a Minor in <span class="italic">Classic and Ancient Mediterranean Studies</span>. 
-                        I had found an interest for all things computers since a young age and have particular interests in topics such as software development, data analytics, full-stack
-                        web development, and video game development.
-                    </p>
+                <div class="section-header">
+                    <h1><span class="highlight">01.</span> About Me</h1>
+                    <div class="section-divider"></div>
                 </div>
-                <div class="free-time">
-                    <p>
-                        In my free time I love to tinker with personal projects, play pick-up basketball, play my guitar, and hang out with my family and friends.
-                    </p>
+                <div class="section-content">
+                    <div class="text">
+                        <div class="about-description">
+                            <p>
+                                Hey there! My name is Jaydon and I'm currently a fourth year student at the <span class="highlight">Pennsylvania State University</span> pursuing a Bachelor of Science 
+                                in <span class="italic"><span class="highlight">Computer Science</span></span> as well as a Minor in <span class="italic">Classic and Ancient Mediterranean Studies</span>. 
+                                I had found an interest for all things computers since a young age and have particular interests in topics such as software development, data analytics, full-stack
+                                web development, and video game development.
+                            </p>
+                        </div>
+                        <div class="free-time">
+                            <p>
+                                In my free time I love to tinker with personal projects, play pick-up basketball, play my guitar, and hang out with my family and friends.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="headshot">
+                        <img src="imgs/MuseumPic.jpg" id="headshot-img" alt="Picture of me at Royal Ontario Museum">
+                        <p id="MEEE"><span id="arrowww">&nbsp;&nbsp;<ion-icon name="arrow-back-outline" id="headshot-arrow"></ion-icon>---</span><span id="MEEE-sizing"> Picture of me at the Royal Ontario Museum in Toronto :)</span></p>
+                    </div>
                 </div>
             </section>
             <!-------------PROJECTS SECTION--------->
@@ -87,10 +97,10 @@
     
             </section>
             <!---------------CONTACT SECTION------->
-            <section role="region" id="contact">
+            <section role="region" id="experience">
             </section>
             <!---------------BLOG SECTION---------->
-            <section role="region" id="blog">
+            <section role="region" id="contact">
     
             </section>
         </main>
