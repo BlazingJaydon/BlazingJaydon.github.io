@@ -3,7 +3,7 @@
 html {
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: none;
-    font-size: 15;
+    font-size: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -83,7 +83,7 @@ nav > div > ul {
     flex-wrap: wrap;
     align-items: center;
     height: 100%;
-    font-size: medium;
+    font-size: 1rem;
     list-style-type: none;
     padding: 0;
 }
@@ -98,7 +98,7 @@ nav > div > ul {
     padding: 0.2rem;
     display: block;
     color: #ccd6f6;
-    font-weight: 500;
+    /* font-weight: 500; */
     position: relative;
 }
 
@@ -380,7 +380,7 @@ button.resume:active {
     }
 
     #about .section-divider {
-        width: 33%;
+        width: 27rem;
         height: 1px;
         background-color: #8892b0;
         z-index: 100;
@@ -431,8 +431,8 @@ button.resume:active {
         display: inline-flex;
         position: relative;
         z-index: 100;
-        width: 255px;
-        height: 255px;
+        width: 16rem;
+        height: 16rem;
         top: 20px;
         border-radius: 5px;
         transform: translate(50px, 25px);
@@ -444,7 +444,7 @@ button.resume:active {
         color: rgb(204, 214, 246);
         opacity: 0;
         position: relative;
-        top: -7rem;
+        top: -8rem;
         left: -15rem;
         display: inline-flex;
         transition: ease-in-out .5s;
