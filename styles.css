@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-* {
+html {
     font-family: "JetBrains Mono", monospace;
-    font-optical-sizing: auto;
+    font-optical-sizing: none;
+    font-size: 15;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
     scroll-behavior: smooth;
     scrollbar-width: auto;
 }
@@ -361,7 +359,7 @@ button.resume:active {
     /* ------About------ */
     #about {
         margin: 0 0 0 200px;
-        padding: 7em 0 0 1em;
+        padding: 5em 0 0 1em;
         display: flex;
         flex-direction: column;
     }
@@ -383,7 +381,8 @@ button.resume:active {
     #about .section-content {
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
+        position: relative;
+        top: -2rem;
     }
 
     #about h1 {
@@ -422,9 +421,11 @@ button.resume:active {
 
     #about .headshot img {
         display: inline-flex;
+        position: relative;
         z-index: 100;
         width: 255px;
         height: 255px;
+        top: 20px;
         border-radius: 5px;
         transform: translate(50px, 25px);
         padding: 5px;
@@ -435,38 +436,39 @@ button.resume:active {
         color: rgb(204, 214, 246);
         opacity: 0;
         position: relative;
-        top: -100px;
-        left: -170px;
+        top: -7rem;
+        left: -15rem;
         display: inline-flex;
         transition: ease-in-out .5s;
     }
 
     .show2 {
-        transform: translateX(210px);
+        transform: translateX(17.5rem);
     }
 
     #about #headshot-arrow {
         z-index: 1;
-        top: 2px;
+        top: 2.7px;
         position: relative;
+        scale: 1.5;
     }
 
     #about #arrowww {
         position: relative;
-        top: 10px;
+        top: 1rem;
     }
 
     #about #MEEE-sizing {
         position: relative;
-        width: 300px;
-        /* top: -10px; */
-        margin-left: 5px;
+        width: 200px;
+        top: -0.3rem;
+        margin-left: 15px;
     }
 
-    #about .MEEE:hover {
+    /* #about .MEEE:hover {
         display: inline-flex;
         transform: translate(50px, 50px);
-    }
+    } */
 }
 
 /* ------1920x1080p Screen-Size Media Queries------ */
