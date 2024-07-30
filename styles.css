@@ -514,6 +514,10 @@ button.resume:active {
         transition: ease-in-out 0.2s;
     }
 
+    #contact .email a {
+        text-decoration: none;
+    }
+
     #contact .contact-button:hover {
         cursor: pointer;
         transform: translate(-2px, -2px);

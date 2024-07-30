@@ -62,9 +62,4 @@ Array.prototype.forEach.call(navToggles, function(navToggle) {
 });
 
 
-//----HELPER FUNCTIONS FOR THE CONTACT BUTTON----//
-contactButton.addEventListener('click',() => {
-    window.open('JaydonHodge-resume.pdf', '_blank');
-})
-
 /////////////////////////////////////////////////////////////////////////////
