@@ -118,6 +118,11 @@ nav > div > ul {
     transition: ease-in-out .3s;
 }
 
+.nav li > a.about::before {
+    transform: translateX(-0.5px);
+}
+
+
 .nav li > a.projects::before {
     transform: translateX(-0.5px);
 }
@@ -127,7 +132,7 @@ nav > div > ul {
 }
 
 .nav li > a.about:hover::before {
-    width: 90%;
+    width: 91.5%;
 }
 
 .nav li > a.projects:hover::before {
