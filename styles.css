@@ -387,11 +387,15 @@ button.resume:active {
         position: relative;
         flex-direction: row;
         align-items: center;
-        width: 78%;
+        width: 76%;
         right: 2rem;
         border-radius: 5px;
         background-color: #20222c;
-        padding: 0 0 0 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    #about .section-header h1 {
+        margin: 0 20px 0 20px;
     }
 
     #about .section-content {
