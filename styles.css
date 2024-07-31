@@ -127,6 +127,10 @@ nav > div > ul {
     transform: translateX(-0.5px);
 }
 
+.nav li > a.experience::before {
+    transform: translateX(-1px);
+}
+
 .nav li > a.contact::before {
     transform: translateX(-1px);
 }
@@ -140,11 +144,11 @@ nav > div > ul {
 }
 
 .nav li > a.contact:hover::before {
-    width: 92%;
+    width: 93%;
 }
 
 .nav li > a.experience:hover::before {
-    width: 94%;
+    width: 95.5%;
 }
 
 .nav .items {
