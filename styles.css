@@ -24,29 +24,58 @@ html, body {
 /* -----NAVIGATION BAR----- */
 .header {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     top: 0;
     left: 0;
     width: 100%;
     height: 4em;
     z-index: 999;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    background-color: #20222c;
-    border-bottom-left-radius: 10px;
+    background-color: #282A3A;
+    /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0px 5px 5px black;
+    box-shadow: 0px 5px 5px black; */
+}
+
+.header .header-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282A3A;
+    margin: 0;
+}
+
+.header .header-styles {
+    display: flex;
+    position: relative;
+    left: 2px;
+    width: 88%;
+    margin: 0;
+}
+
+.header .header-divide {
+    display: flex;
+    background-color: #4d515c;
+    border-radius: 10px;
+    width: 100%;
+    height: 1px;
 }
 
 .logo {
     width: 50px;
     height: 50px;
     border: 2px solid #615EFC;
+    background-color: #20222c;
     border-radius: 6px;
     display: flex;
     transition: ease-in-out .2s;
     position: relative;
-    left: 30px;
+    left: 6rem;
 }
 
 .header .logo a > img {
@@ -74,7 +103,9 @@ html, body {
 
 nav {
     align-items: center;
+    position: relative;
     display: flex;
+    right: 3.7rem;
 }
 
 .nav {
@@ -177,7 +208,7 @@ button.resume {
     text-align: center;
     color: #ccd6f6;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #20222c;
     cursor: pointer;
     position: relative;
     display: inline-block;
@@ -306,7 +337,7 @@ button.resume:active {
 
     /* ----------Home--------- */
     #home {
-        padding: 8em 1em 1em 1em;
+        padding: 8em 1em 1em 0;
         margin: 0 0 0 200px
     }
 
@@ -380,7 +411,7 @@ button.resume:active {
         padding: 5em 0 0 1em;
         display: flex;
         flex-direction: column;
-        scroll-margin-top: 5rem;
+        scroll-margin-top: 4rem;
     }
 
     #about .section-header {
@@ -570,7 +601,6 @@ button.resume:active {
         border-radius: 10px;
         color: #ccd6f6;
         border: #615EFC solid 3px;
-        border-style: inset;
         transition: ease-in-out 0.2s;
         margin: 0;
     }
