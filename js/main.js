@@ -67,6 +67,26 @@ Array.prototype.forEach.call(navToggles, function(navToggle) {
 
 //------HELPER FUNCTIONS FOR SOCIALS LINKS------//
 
+document.addEventListener('DOMContentLoaded', function () {
+    const githubSvg = document.getElementById('github-svg');
+    const linkedinSvg = document.getElementById('linkedin-svg');
+
+    function adjustBackgroundSize(svgElement) {
+        const boundingBox = svgElement.getBBox();
+        const width = boundingBox.width;
+        const height = boundingBox.height;
+
+        svgElement.style.backgroundSize = `${width}px ${height}px`;
+        svgElement.style.padding = '0.25rem 0.35rem 0.25rem 0.35rem'; // Adjust the padding as needed
+    }
+
+    // Adjust background size for GitHub SVG
+    adjustBackgroundSize(githubSvg);
+
+    // Adjust background size for LinkedIn SVG
+    adjustBackgroundSize(linkedinSvg);
+});
+
 //GitHub Button//
 githubButton.addEventListener('mouseover',() => {
     githubButton.style.backgroundColor = '#615EFC'
