@@ -32,12 +32,8 @@ html, body {
     height: 4em;
     z-index: 999;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     background-color: #282A3A;
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 5px 5px black; */
 }
 
 .header .header-content {
@@ -54,7 +50,7 @@ html, body {
     display: flex;
     position: relative;
     left: 1.5px;
-    width: 88%;
+    width: 88.1%;
     margin: 0;
 }
 
