@@ -123,7 +123,7 @@ twitterButton.addEventListener('mouseout',() => {
 })
 
 twitterButton.addEventListener('click',() => {
-    window.open('https://x.com/yajenio', '_blank')
+    window.open('https://x.com/yajenio', '_blank');
 })
 
 //Instagram Button//
@@ -136,7 +136,7 @@ instaButton.addEventListener('mouseout',() => {
 })
 
 instaButton.addEventListener('click',() => {
-    window.open('https://www.instagram.com/jayhodge72?igsh=MXcxaDFieWlnN3l3Mw%3D%3D&utm_source=qr', '_blank')
+    window.open('https://www.instagram.com/jayhodge72?igsh=MXcxaDFieWlnN3l3Mw%3D%3D&utm_source=qr', '_blank');
 })
 
 //Discord Button//
@@ -149,7 +149,7 @@ discordButton.addEventListener('mouseout',() => {
 })
 
 discordButton.addEventListener('click',() => {
-    window.open('http://discord.com/users/290289343677988864', '_blank')
+    window.open('http://discord.com/users/290289343677988864', '_blank');
 })
 
 /////////////////////////////////////////////////////////////////////////////
