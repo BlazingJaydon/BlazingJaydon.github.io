@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const height = boundingBox.height;
 
         svgElement.style.backgroundSize = `${width}px ${height}px`;
-        svgElement.style.padding = '0.25rem 0.35rem 0.25rem 0.35rem'; // Adjust the padding as needed
+        svgElement.style.padding = '0.05rem 0.35rem 0.05rem 0.35rem'; // Adjust the padding as needed
     }
 
     // Adjust background size for GitHub SVG

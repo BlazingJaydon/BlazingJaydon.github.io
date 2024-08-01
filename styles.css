@@ -646,6 +646,7 @@ button.resume:active {
 
     #contact .socials-section #github-svg {
         border-radius: 100%;
+        scale: 1.1;
         background-color: #ccd6f6;
         border: #615EFC solid 5px;
         height: inherit;
@@ -666,7 +667,7 @@ button.resume:active {
     }
 
     #contact .socials-section #twitter-svg {
-        scale: 0.95;
+        scale: 0.90;
         padding: 0.2rem 0.4rem 0.2rem 0.4rem;
         border-radius: 20px;
         fill: #ccd6f6;
