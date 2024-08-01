@@ -1,15 +1,19 @@
-const navMenu = document.getElementById('nav-menu'),
-        toggleMenu = document.getElementById('toggle-menu'),
-        resumeButton= document.getElementById('resume'),
-        logoAnch= document.getElementById('logo-anch'),
-        borderBar = document.getElementById('border-bar'),
+const navMenu=document.getElementById('nav-menu'),
+        toggleMenu=document.getElementById('toggle-menu'),
+        resumeButton=document.getElementById('resume'),
+        logoAnch=document.getElementById('logo-anch'),
+        borderBar=document.getElementById('border-bar'),
         headshotPic=document.getElementById('headshot-img'),
         headshotArrow=document.getElementById('arrow'),
         contactButton=document.getElementById('contact-btn'),
+        githubButton=document.getElementById('github-svg'),
+        linkedinButton=document.getElementById('linkedin-svg'),
+        twitterButton=document.getElementById('twitter-svg'),
+        instaButton=document.getElementById('instagram-svg'),
+        discordButton=document.getElementById('discord-svg'),
         MEEE=document.getElementById('MEEE');
 
 var navToggles=document.getElementsByClassName('page-links');
-
 
 //----HELPER FUNCTIONS FOR HEADSHOT IMG HANDLING----//
 //for when user hovers over my headshot img
@@ -61,5 +65,71 @@ Array.prototype.forEach.call(navToggles, function(navToggle) {
     });
 });
 
+//------HELPER FUNCTIONS FOR SOCIALS LINKS------//
+
+//GitHub Button//
+githubButton.addEventListener('mouseover',() => {
+    githubButton.style.backgroundColor = '#615EFC'
+})
+
+githubButton.addEventListener('mouseout',() => {
+    githubButton.style.backgroundColor = ''
+})
+
+githubButton.addEventListener('click',() => {
+    window.open('https://github.com/BlazingJaydon', '_blank')
+})
+
+//LinkedIn Button//
+linkedinButton.addEventListener('mouseover',() => {
+    linkedinButton.style.backgroundColor = '#615EFC'
+})
+
+linkedinButton.addEventListener('mouseout',() => {
+    linkedinButton.style.backgroundColor = ''
+})
+
+linkedinButton.addEventListener('click',() => {
+    window.open('https://www.linkedin.com/in/jaydon-hodge-8a6771263/', '_blank')
+})
+
+//Twitter Button//
+twitterButton.addEventListener('mouseover',() => {
+    twitterButton.style.fill = '#615EFC'
+})
+
+twitterButton.addEventListener('mouseout',() => {
+    twitterButton.style.fill = ''
+})
+
+twitterButton.addEventListener('click',() => {
+    window.open('https://x.com/yajenio', '_blank')
+})
+
+//Instagram Button//
+instaButton.addEventListener('mouseover',() => {
+    instaButton.style.fill = '#615EFC'
+})
+
+instaButton.addEventListener('mouseout',() => {
+    instaButton.style.fill = ''
+})
+
+instaButton.addEventListener('click',() => {
+    window.open('https://www.instagram.com/jayhodge72?igsh=MXcxaDFieWlnN3l3Mw%3D%3D&utm_source=qr', '_blank')
+})
+
+//Discord Button//
+discordButton.addEventListener('mouseover',() => {
+    discordButton.style.fill = '#615EFC'
+})
+
+discordButton.addEventListener('mouseout',() => {
+    discordButton.style.fill = ''
+})
+
+discordButton.addEventListener('click',() => {
+    window.open('http://discord.com/users/290289343677988864', '_blank')
+})
 
 /////////////////////////////////////////////////////////////////////////////
