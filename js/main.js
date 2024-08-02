@@ -1,7 +1,8 @@
 
-//Function to adjust whether the horizonal scroll bar is displayed depending on view-width
+//Function and global variables for handling whether the horizonal scroll bar is displayed depending on view-width
 
 const targetWidth = window.innerWidth * 0.95;
+const userResizeWidth = window.innerWidth * 1.05;
 
 function adjustOverflow() {
 
@@ -14,6 +15,12 @@ function adjustOverflow() {
     } else {
         document.documentElement.style.overflowX = 'visible';
         document.body.style.overflowX = 'visible';
+    } if (window.innerWidth <= 1200){
+         document.documentElement.style.overflowX = 'visible';
+         document.body.style.overflowX = 'visible';
+    } if (window.innerWidth >= userResizeWidth){
+         document.documentElement.style.overflowX = 'hidden';
+         document.body.style.overflowX = 'hidden';
     }
 }
 
