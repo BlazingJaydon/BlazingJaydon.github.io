@@ -13,12 +13,11 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    /* width: 100vh; */
     background-color: #282A3A;
     margin: 0;
-}
-
-html, body {
-    overflow-x: hidden;
 }
 
 /* -----NAVIGATION BAR----- */
@@ -470,13 +469,19 @@ button.resume:active {
         color: #8892b0;
     }
 
+    #about .headshot {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     #about .headshot img {
         display: inline-flex;
         position: relative;
         z-index: 100;
         width: 16rem;
         height: 16rem;
-        top: 1.5rem;
+        top: -1rem;
         border-radius: 5px;
         transform: translate(50px, 25px);
         padding: 5px;
@@ -484,17 +489,19 @@ button.resume:active {
     }
 
     #about #MEEE {
+        position: relative;
+        width: 400px;
+        height: 4rem;
         color: rgb(204, 214, 246);
         opacity: 0;
         position: relative;
-        top: -8rem;
-        left: -15rem;
-        display: inline-flex;
+        top: -1rem;
+        display: flex;
         transition: ease-in-out .5s;
     }
 
     .show2 {
-        transform: translateX(17.5rem);
+        transform: translateX(3.5rem);
     }
 
     #about #headshot-arrow {
@@ -589,14 +596,17 @@ button.resume:active {
     }
 
     #contact .contact-message {
+        position: relative;
         margin: 6rem 8rem 0 0;
         position: relative;
-        top: -8.5rem;
+        top: -9rem;
         width: 400px;
     } 
 
     #contact .contact-message h1 {
+        position: relative;
         font-size: 50px;
+        left: -5px;
     }
 
     #contact .contact-message p {
@@ -812,6 +822,7 @@ button.resume:active {
     }
 
     footer {
+        display: flex;
         height: 8rem;
         background-color: #20222c;
     }

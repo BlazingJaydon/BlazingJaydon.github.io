@@ -1,3 +1,22 @@
+
+//Function to adjust whether the horizonal scroll bar is displayed depending on view-width
+function adjustOverflow() {
+    if (window.innerWidth >= 1550) {
+        document.documentElement.style.overflowX = 'hidden';
+        document.body.style.overflowX = 'hidden';
+    } else {
+        document.documentElement.style.overflowX = 'visible';
+        document.body.style.overflowX = 'visible';
+    }
+}
+
+// Adjust overflow on window resize
+window.addEventListener('resize', adjustOverflow);
+
+// Adjust overflow on initial load
+adjustOverflow();
+/////////////////////////////////////////////////////////////////////////////////////////////
+
 const navMenu=document.getElementById('nav-menu'),
         toggleMenu=document.getElementById('toggle-menu'),
         resumeButton=document.getElementById('resume'),
