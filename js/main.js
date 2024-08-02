@@ -1,7 +1,7 @@
 
 //Function to adjust whether the horizonal scroll bar is displayed depending on view-width
 function adjustOverflow() {
-    if (window.innerWidth >= 1550) {
+    if (window.innerWidth >= 1500) {
         document.documentElement.style.overflowX = 'hidden';
         document.body.style.overflowX = 'hidden';
     } else {
