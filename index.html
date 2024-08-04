@@ -14,44 +14,44 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     </head>
     <body>
-        <header class="header">
-            <div class="header-content">
-                <!---------------LOGO-------->
-                <div class="logo">
-                    <a id="logo-anch" href="#home"><img src="imgs/boltLogo.png" alt="Jaydon Hodge portfolio logo"></a>
-                </div>
-                <!---------------NAVIGATION BAR---------->
-                <nav class="nav" id="nav-menu" role="navigation">
-
-                    <!---------------NAVIGATION SECTION---------->
-                    <div class="container">
-                        <ul class="nav_list">
-                            <li>
-                                <a href="#about" class="page-links about"><span class="nums">01.</span><span class="items">About</span></a>
-                            </li>                
-                            <li>
-                                <a href="#experience" class="page-links experience"><span class="nums">02.</span><span class="items">Experience</span></a>
-                            </li>
-                            <li>
-                                <a href="#projects" class="page-links projects"><span class="nums">03.</span><span class="items">Projects</span></a>
-                            </li>
-                            <li>
-                                <a href="#contact" class="page-links contact"><span class="nums">04.</span><span class="items">Contact</span></a>
-                            </li>
-                            <li>
-                                <button class="resume" id="resume" onclick="window.open('JaydonHodge-resume.pdf', '_blank')">Resume</button>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="border-bar" id="border-bar"></div>
-                <ion-icon name="menu-outline" class="header_toggle" id="toggle-menu"></ion-icon>
-            </div>
-            <div class="header-styles">
-                <div class="header-divide" id="header-divide"></div>
-            </div>
-        </header>
         <main>
+            <section class="header">
+                <div class="header-content">
+                    <!---------------LOGO-------->
+                    <div class="logo">
+                        <a id="logo-anch" href="#home"><img src="imgs/boltLogo.png" alt="Jaydon Hodge portfolio logo"></a>
+                    </div>
+                    <!---------------NAVIGATION BAR---------->
+                    <nav class="nav" id="nav-menu" role="navigation">
+
+                        <!---------------NAVIGATION SECTION---------->
+                        <div class="container">
+                            <ul class="nav_list">
+                                <li>
+                                    <a href="#about" class="page-links about"><span class="nums">01.</span><span class="items">About</span></a>
+                                </li>
+                                <li>
+                                    <a href="#experience" class="page-links experience"><span class="nums">02.</span><span class="items">Experience</span></a>
+                                </li>
+                                <li>
+                                    <a href="#projects" class="page-links projects"><span class="nums">03.</span><span class="items">Projects</span></a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="page-links contact"><span class="nums">04.</span><span class="items">Contact</span></a>
+                                </li>
+                                <li>
+                                    <button class="resume" id="resume" onclick="window.open('JaydonHodge-resume.pdf', '_blank')">Resume</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="border-bar" id="border-bar"></div>
+                    <ion-icon name="menu-outline" class="header_toggle" id="toggle-menu"></ion-icon>
+                </div>
+                <div class="header-styles">
+                    <div class="header-divide" id="header-divide"></div>
+                </div>
+                </section>
             <!---------------HOME SECTION-------->
             <section role="region" id="home">
                 <p>Hi, my name is</p>
@@ -59,8 +59,8 @@
                 <h1 id="alt-name">I also go by "Yajenio"</h1>
                 <h1 id="joke-intro">I'm a CMPSC student by day, and a CMPSC enthusiast also by day <ion-icon name="happy-outline" class="smilely-face"></ion-icon></h1>
                 <div class="home-description">
-                    <p>The purpose of this web page is to serve as my <span class="highlight">personal portfolio</span> and <span class="highlight">online presence hub</span>. 
-                        It is meant to be a place to display my ventures within my tech career, as well as a place of information for anyone that is 
+                    <p>The purpose of this web page is to serve as my <span class="highlight">personal portfolio</span> and <span class="highlight">online presence hub</span>.
+                        It is meant to be a place to display my ventures within my tech career, as well as a place of information for anyone that is
                         interested in learning more about who I am and what I do.
                     </p>
                 </div>
@@ -72,17 +72,17 @@
                 </div>
             </section>
             <!----------------ABOUT SECTION------>
-            <div class="divider" id="root-divider"></div> 
+            <div class="divider" id="root-divider"></div>
             <section role="region" id="about">
                 <div class="section-header">
                     <h1><span class="highlight">01.</span> About Me</h1>
                 </div>
-                <div class="section-content">
+                <div class="section-content align-left">
                     <div class="text">
                         <div class="about-description">
                             <p>
                                 Hey there! My name is Jaydon and I'm currently a fourth year student at the <span class="highlight">Pennsylvania State University</span> pursuing a Bachelor of Science degree
-                                in <span class="italic"><span class="highlight">Computer Science</span></span> and a Minor in <span class="italic">Classic and Ancient Mediterranean Studies</span>. 
+                                in <span class="italic"><span class="highlight">Computer Science</span></span> and a Minor in <span class="italic">Classic and Ancient Mediterranean Studies</span>.
                                 I had found an interest for all things computers since a young age and have particular interests in topics such as software engineering, data analytics, full-stack
                                 web development, and video game development.
                             </p>
@@ -95,7 +95,7 @@
                     </div>
                     <div class="headshot">
                         <img src="imgs/MuseumPic.jpg" id="headshot-img" alt="Picture of me at Royal Ontario Museum">
-                        <p id="MEEE"><span id="arrowww">&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="arrow-back-outline" id="headshot-arrow"></ion-icon></span><span id="MEEE-sizing"> Picture of me at the Royal Ontario Museum in Toronto :)</span></p>
+                        <p id="MEEE"><span id="arrowww"><ion-icon name="arrow-back-outline" id="headshot-arrow"></ion-icon></span><span id="MEEE-sizing"> Picture of me at the Royal Ontario Museum in Toronto :)</span></p>
                     </div>
                 </div>
             </section>
@@ -105,7 +105,7 @@
                 <div class="section-header">
                     <h1><span class="highlight">02.</span> Experience</h1>
                 </div>
-                <div class="section-content">
+                <div class="section-content align-left">
 
                 </div>
             </section>
@@ -115,7 +115,7 @@
                 <div class="section-header">
                     <h1><span class="highlight">03.</span> Projects</h1>
                 </div>
-                <div class="section-content">
+                <div class="section-content align-left">
 
                 </div>
             </section>
@@ -125,7 +125,7 @@
                 <div class="section-header">
                     <h1><span class="highlight">04.</span> Contact Me</h1>
                 </div>
-                <div class="section-content">
+                <div class="section-content align-left">
                     <div class="contact-message">
                         <h1 id="get-in-touch">
                             GET IN TOUCH!
@@ -150,19 +150,19 @@
                                 <svg class="socials-svgs" id="discord-svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
-            <p>Email: <a href="mailto:jaydonhodge@gmail.com?cc=jlh7209@psu.edu">jaydonhodge@gmail.com</a></p>
-            <p>Designed & Built by Jaydon Hodge</p>
-            <p>Credits For Icons Used: 
-                <a href="https://ionic.io/ionicons" target="_blank">ionicons</a> & 
-                <a href="https://remixicon.com/" target="_blank">Remix Icon</a> & 
-                <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> & 
+            <p>Email: <a href="mailto:jaydonhodge@gmail.com?cc=jlh7209@psu.edu">jaydonhodge@gmail.com</a><br>
+            Designed & Built by Jaydon Hodge<br>
+            Credits For Icons Used:
+                <a href="https://ionic.io/ionicons" target="_blank">ionicons</a> &
+                <a href="https://remixicon.com/" target="_blank">Remix Icon</a> &
+                <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> &
                 <a href="https://devicon.dev/" target="_blank">Devicon</a> &
-                <a href="https://www.canva.com/" target="_blank">Canva</a>  
+                <a href="https://www.canva.com/" target="_blank">Canva</a>
             </p>
         </footer>
         <!---------JavaScript IMPORTS-------->
