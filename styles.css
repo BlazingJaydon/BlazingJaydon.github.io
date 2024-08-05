@@ -33,6 +33,31 @@ body {
     background-color: #282a3a;
 }
 
+.header .header-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282a3a;
+    margin: 0;
+}
+
+.header .header-styles {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.header .header-divide {
+    display: flex;
+    background-color: #4d515c;
+    border-radius: 10px;
+    width: 100%;
+    height: 1px;
+}
+
 .logo {
     width: 50px;
     height: 50px;
@@ -312,33 +337,7 @@ button.resume:active {
         display: flex;
     }
 
-    .header .header-content {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #282a3a;
-        margin: 0;
-    }
-
-    .header .header-styles {
-        display: flex;
-        position: relative;
-        width: 100%;
-        margin: 0;
-    }
-
-    .header .header-divide {
-        display: flex;
-        background-color: #4d515c;
-        border-radius: 10px;
-        width: 100%;
-        height: 1px;
-    }
-
     /* ------Content of the Webpage------ */
-
     [role="region"] {
         padding: 10rem 0 0 0;
     }
@@ -348,7 +347,7 @@ button.resume:active {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 8em 1em 1em 0;
+        padding: 6em 1em 0 0;
         margin: 0 0 0 2.5rem;
     }
 
@@ -387,7 +386,6 @@ button.resume:active {
 
     #home .home-description {
         width: 30rem;
-        margin: 2.5rem 0 0 0;
     }
 
     #home .home-description > p {
@@ -421,7 +419,7 @@ button.resume:active {
         display: flex;
         flex-direction: column;
         align-items: center;
-        scroll-margin-top: 4rem;
+        scroll-margin-top: 5.5rem;
     }
 
     #about .section-header {
@@ -549,7 +547,7 @@ button.resume:active {
         display: flex;
         flex-direction: column;
         align-items: center;
-        scroll-margin-top: 4rem;
+        scroll-margin-top: 1rem;
     }
 
     #experience .section-header {
@@ -575,7 +573,7 @@ button.resume:active {
         width: 100%;
         position: relative;
         align-items: center;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         margin-left: 2.5rem;
     }
 
@@ -588,6 +586,107 @@ button.resume:active {
     }
 
     #experience h1 {
+        color: #ccd6f6;
+    }
+
+    #experience .tech-section {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: #20222c;
+        border-radius: 5px;
+        width: 40rem;
+        height: 30rem;
+        margin: 2rem 0 0 0;
+        left: -1.5rem;
+    }
+
+    #experience #tech-message {
+        display: flex;
+        position: relative;
+        padding: 0 1rem 0 1rem;
+        margin-bottom: 1rem;
+        color: #8892b0;
+    }
+
+    #experience .tech-icons {
+        display: flex;
+        position: relative;
+    }
+
+    #experience .tech-icon {
+        display: flex;
+        position: relative;
+        height: 8rem;
+        width: 8rem;
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    #experience #techs-row1 {
+        display: flex;
+        width: 40rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    #experience #sql-icon.tech-icon {
+        height: 7rem;
+        width: 7rem;
+        margin: 0.5rem 1rem 1rem 1rem;
+    }
+
+    #experience #virtualbox-icon.tech-icon {
+        height: 7.5rem;
+        width: 7.5rem;
+        margin: 0.2rem 1rem 1rem 1rem;
+    }
+
+    /* ----Projects---- */
+    #projects {
+        padding: 5em 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        scroll-margin-top: 4rem;
+    }
+
+    #projects .section-header {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #20222c;
+        padding: 1rem 1rem 1rem 1rem;
+        scale: 0.95;
+    }
+
+    #projects .section-header h1 {
+        margin: 0 20px 0 20px;
+        font-size: 2rem;
+    }
+
+    #projects .section-content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 2.5rem;
+    }
+
+    #projects .section-content.align-left {
+        align-self: flex-start;
+    }
+
+    #projects .highlight {
+        color: #615efc;
+    }
+
+    #projects h1 {
         color: #ccd6f6;
     }
 
