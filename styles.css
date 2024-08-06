@@ -546,7 +546,7 @@ button.resume:active {
         display: flex;
         flex-direction: column;
         align-items: center;
-        scroll-margin-top: 1rem;
+        scroll-margin-top: 0.2rem;
     }
 
     #experience .section-header {
@@ -587,6 +587,11 @@ button.resume:active {
         color: #ccd6f6;
     }
 
+    #experience h2 {
+        color: #ccd6f6;
+        font-size: 1.2rem;
+    }
+
     #experience .tech-section {
         display: flex;
         flex-direction: column;
@@ -594,7 +599,7 @@ button.resume:active {
         background-color: #20222c;
         border-radius: 5px;
         width: 40rem;
-        height: 30rem;
+        height: 32rem;
         margin: 2rem 0 0 0;
         left: -2.5rem;
     }
@@ -602,14 +607,13 @@ button.resume:active {
     #experience #tech-message {
         display: flex;
         position: relative;
-        padding: 0 1rem 0 1rem;
+        padding: 0 1rem 0 2rem;
         margin-bottom: 1rem;
-        color: #8892b0;
     }
 
     #experience .tech-icons {
         display: flex;
-        position: relative;
+        flex-direction: column;
     }
 
     #experience .tech-icon {
@@ -618,12 +622,36 @@ button.resume:active {
         height: 8rem;
         width: 8rem;
         margin: 0 1rem 1rem 1rem;
+        filter: grayscale(1);
+        transition: 0.3s ease-in-out;
+    }
+
+    #experience .tech-icon:hover {
+        filter: grayscale(0);
     }
 
     #experience #techs-row1 {
         display: flex;
         width: 40rem;
         flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    #experience #techs-row2 {
+        display: flex;
+        width: 40rem;
+        padding-bottom: 0.5rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    #experience #techs-row3 {
+        display: flex;
+        width: 40rem;
+        flex-direction: row;
+        left: 0.5rem;
         justify-content: space-evenly;
         position: relative;
     }
@@ -638,6 +666,80 @@ button.resume:active {
         height: 7.5rem;
         width: 7.5rem;
         margin: 0.2rem 1rem 1rem 1rem;
+    }
+
+    #experience #JS-icon.tech-icon {
+        height: 7rem;
+        width: 7rem;
+        margin: 0.5rem 1rem 1rem 1rem;
+    }
+
+    #experience #C-icon.tech-icon {
+        margin: 0 1rem 1rem 1rem;
+        right: 5px;
+    }
+
+    #experience .employment-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        height: 20rem;
+        width: 40rem;
+        align-self: flex-start;
+        margin: 2rem 0 0 5rem;
+    }
+
+    #experience #employment-message {
+        display: flex;
+        position: relative;
+        align-self: flex-start;
+        padding: 1rem 1rem 1rem 2rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        background-color: #20222c;
+        border-radius: 5px;
+    }
+
+    #experience .employments {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    #experience .employment-icon {
+        display: flex;
+        position: relative;
+        height: 8rem;
+        width: 8rem;
+        margin: 1rem 1rem 1rem 1rem;
+        border-radius: 5px;
+        align-self: flex-start;
+    }
+
+    #experience #penn-state {
+        display: flex;
+        position: relative;
+        align-items: center;
+        right: 1.49rem;
+        margin-left: -1.8px;
+        flex-direction: column;
+        width: 34.8rem;
+        border-top: solid #4d515c 1px;
+        border-radius: 2px;
+        scale: 0.95;
+    }
+
+    #experience #THiCC-Lab {
+        text-decoration: underline;
+        align-self: flex-start;
+        margin-bottom: 0;
+    }
+
+    #experience #THiCC-Lab-description {
+        display: flex;
+        color: #8892b0;
     }
 
     /* ----Projects---- */
