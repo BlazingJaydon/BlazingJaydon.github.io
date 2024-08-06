@@ -722,10 +722,9 @@ button.resume:active {
         display: flex;
         position: relative;
         align-items: center;
-        right: 1.49rem;
-        margin-left: -1.8px;
+        margin-left: -5rem;
         flex-direction: column;
-        width: 34.8rem;
+        width: 35rem;
         border-top: solid #4d515c 1px;
         border-radius: 2px;
         scale: 0.95;
