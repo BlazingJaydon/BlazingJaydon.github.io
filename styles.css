@@ -6,13 +6,8 @@
 }
 
 @font-face {
-    font-family: Inconsolata;
-    src: url(fonts/Inconsolata-Regular.ttf);
-}
-
-@font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Regular.ttf);
+    font-family: SF Pro Text;
+    src: url(fonts/SFProText-Regular.ttf);
 }
 
 html {
@@ -748,24 +743,16 @@ button.resume:active {
         scale: 0.95;
     }
 
-    #experience #penn-state h2 #Lab-Postion {
-        font-family: "Inconsolata";
+    #experience #penn-state h2 {
+        font-family: "SF Pro Text";
         align-self: flex-start;
         margin-bottom: 0;
-        transition: 0.15s;
-        font-size: 2px;
-    }
-
-    #experience #Lab-Position #betterAt {
-        font-family: "Roboto";
-        margin-right: -6px;
-        margin-left: -6px;
     }
 
     #experience #Lab-Position #THiCC-Lab {
         display: initial;
         border-bottom: 1.5px solid #615efc00;
-        transition: 0.15s ease-in-out;
+        transition: 0.25s ease-in-out;
     }
 
     #experience #Lab-Position #THiCC-Lab:hover {
