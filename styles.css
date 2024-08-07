@@ -739,11 +739,12 @@ button.resume:active {
         flex-direction: column;
         width: 35rem;
         border-top: solid #4d515c 1px;
+        border-bottom: solid #4d515c 1px;
         border-radius: 2px;
         scale: 0.95;
     }
 
-    #experience #penn-state h2 {
+    #experience #penn-state > h2 {
         font-family: "SF Pro Text";
         align-self: flex-start;
         margin-bottom: 0;
@@ -821,6 +822,43 @@ button.resume:active {
 
     #projects h1 {
         color: #ccd6f6;
+    }
+
+    #projects .tabs {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    #projects .tab-button {
+        display: flex;
+        position: relative;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #f1f1f1;
+        border: none;
+        outline: none;
+    }
+
+    #projects .tab-button.active {
+        background-color: #ccc;
+    }
+
+    #projects .tab-content {
+        display: flex;
+        flex-direction: column;
+        /* opacity: 1;
+        transition: 0.5s ease-in-out; */
+    }
+
+    /* #projects .tab-content.show {
+        display: block;
+        opacity: 1;
+    } */
+
+    #projects .tab-content h2 {
+        margin-top: 0;
     }
 
     /* ----Contact---- */

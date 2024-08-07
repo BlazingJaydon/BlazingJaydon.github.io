@@ -1,5 +1,4 @@
 //Function and global variables for handling whether the horizonal scroll bar is displayed depending on view-width
-
 const targetWidth = window.innerWidth * 0.95;
 const userResizeWidth = window.innerWidth * 1.05;
 
@@ -32,9 +31,7 @@ adjustOverflow();
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////////////////////////////////////////
-
-//Global variables to be used for stuff below
+///////////////Global variables to be used for stuff below
 const navMenu = document.getElementById("nav-menu"),
   toggleMenu = document.getElementById("toggle-menu"),
   resumeButton = document.getElementById("resume"),
@@ -54,30 +51,7 @@ const navMenu = document.getElementById("nav-menu"),
 
 var navToggles = document.getElementsByClassName("page-links");
 
-//----HELPER FUNCTIONS FOR HEADSHOT IMG HANDLING----//
-//for when user hovers over my headshot img
-headshotPic.addEventListener("mouseover", () => {
-  MEEE.classList.toggle("show2");
-  MEEE.style.opacity = "1";
-});
-
-//for when user mouses out of my headshot img
-headshotPic.addEventListener("mouseout", () => {
-  MEEE.classList.toggle("show2");
-  MEEE.style.opacity = "";
-});
-
-//changing opacity to 1 of the MEEE text that appears
-MEEE.addEventListener("mouseover", () => {
-  MEEE.classList.add("show2");
-  MEEE.style.opacity = "1";
-});
-
-//reseting the opacticty to 0 of the MEEE text
-MEEE.addEventListener("mouseout", () => {
-  MEEE.classList.remove("show2");
-  MEEE.style.opacity = "";
-});
+/////////////////////////////////////////////---NAVIGATION SECTION---////////////////////////////////////////////////
 
 //----Below 4 functions are to handle toggling the nav bar when the screen is a small size//
 toggleMenu.addEventListener("click", () => {
@@ -104,7 +78,36 @@ Array.prototype.forEach.call(navToggles, function (navToggle) {
   });
 });
 
-///////------HELPER FUNCTIONS FOR EMPLOYMENT LINKS------///////
+/////////////////////////////////////////////---ABOUT ME SECTION---////////////////////////////////////////////////
+
+//////////----HELPER FUNCTIONS FOR HEADSHOT IMG HANDLING----//////////
+//for when user hovers over my headshot img
+headshotPic.addEventListener("mouseover", () => {
+  MEEE.classList.toggle("show2");
+  MEEE.style.opacity = "1";
+});
+
+//for when user mouses out of my headshot img
+headshotPic.addEventListener("mouseout", () => {
+  MEEE.classList.toggle("show2");
+  MEEE.style.opacity = "";
+});
+
+//changing opacity to 1 of the MEEE text that appears
+MEEE.addEventListener("mouseover", () => {
+  MEEE.classList.add("show2");
+  MEEE.style.opacity = "1";
+});
+
+//reseting the opacticty to 0 of the MEEE text
+MEEE.addEventListener("mouseout", () => {
+  MEEE.classList.remove("show2");
+  MEEE.style.opacity = "";
+});
+
+/////////////////////////////////////////////---EMPLOYMENT SECTION---////////////////////////////////////////////////
+
+//////////------HELPER FUNCTIONS FOR EMPLOYMENT LINKS------//////////
 
 pennstateButton.addEventListener("click", () => {
   window.open("https://www.psu.edu/", "_blank");
@@ -114,7 +117,43 @@ thiccLabButton.addEventListener("click", () => {
   window.open("https://sites.psu.edu/thicc/");
 });
 
-///////------HELPER FUNCTIONS FOR SOCIALS LINKS------///////
+/////////////////////////////////////////////---PROJECTS SECTION---////////////////////////////////////////////////
+
+////---Function that is executed when a user presses one of the tab buttons in the projects section---////
+function showProjects(projectType) {
+  //function removes all current active tags from the buttons and then adds it back to whichever button was pressed
+  const tabs = document.querySelectorAll(".tab-button");
+  tabs.forEach((tab) => {
+    tab.classList.remove("active");
+  });
+
+  document
+    .querySelector(`[onclick="showProjects('${projectType}')"]`)
+    .classList.add("active");
+
+  //function removes the displays from all sections of the project content panels and then adds it back to the panel corresponding
+  //to the button that was pressed
+  const contents = document.querySelectorAll(".tab-content");
+  contents.forEach((content) => {
+    content.style.opacity = "0";
+    content.style.transition = "opacity 0.1s"; // Ensure transition is set before changing display
+    setTimeout(() => {
+      content.style.display = "none";
+    }, 100); // Match the timeout duration to the transition duration
+  });
+
+  const activeContent = document.getElementById(projectType);
+  setTimeout(() => {
+    activeContent.style.display = "flex";
+    setTimeout(() => {
+      activeContent.style.opacity = "1";
+    }, 50); // Slight delay to ensure display is set before opacity change
+  }, 100); // Ensure this matches the transition duration of hiding the previous content
+}
+
+/////////////////////////////////////////////---CONTACT SECTION---////////////////////////////////////////////////
+
+//////////------HELPER FUNCTIONS FOR ADJUSTING SOME OF THE SIZING OF THE SVGs------//////////
 
 document.addEventListener("DOMContentLoaded", function () {
   const githubSvg = document.getElementById("github-svg");
@@ -135,6 +174,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Adjust background size for LinkedIn SVG
   adjustBackgroundSize(linkedinSvg);
 });
+
+//////////------HELPER FUNCTIONS FOR SOCIALS LINKS------//////////
 
 //GitHub Button//
 githubButton.addEventListener("mouseover", () => {
@@ -204,4 +245,4 @@ discordButton.addEventListener("click", () => {
   window.open("http://discord.com/users/290289343677988864", "_blank");
 });
 
-/////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////

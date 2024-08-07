@@ -21,10 +21,10 @@
                     <div class="logo">
                         <a id="logo-anch" href="#home"><img src="imgs/boltLogo.png" alt="Jaydon Hodge portfolio logo"></a>
                     </div>
-                    <!---------------NAVIGATION BAR---------->
+                    <!---------------NAVIGATION SECTION---------->
                     <nav class="nav" id="nav-menu" role="navigation">
 
-                        <!---------------NAVIGATION SECTION---------->
+                        <!---------------NAVIGATION BAR---------->
                         <div class="container">
                             <ul class="nav_list">
                                 <li>
@@ -52,6 +52,7 @@
                     <div class="header-divide" id="header-divide"></div>
                 </div>
                 </section>
+            <!---------------CONTENT SECTION----------------->
             <!---------------HOME SECTION-------->
             <section role="region" id="home">
                 <p>Hi, my name is</p>
@@ -208,8 +209,27 @@
                 <div class="section-header">
                     <h1><span class="highlight">03.</span> Projects</h1>
                 </div>
+                <div class="tabs">
+                    <button class="tab-button active" onclick="showProjects('completed')">Completed</button>
+                    <button class="tab-button" onclick="showProjects('ongoing')">Ongoing</button>
+                    <button class="tab-button" onclick="showProjects('upcoming')">Upcoming</button>
+                </div>
                 <div class="section-content align-left">
-
+                    <div id="completed" class="tab-content">
+                        <h2>Completed Projects</h2>
+                        <p>Project A</p>
+                        <p>Project B</p>
+                    </div>
+                    <div id="ongoing" class="tab-content" style="display: none;">
+                        <h2>Ongoing Projects</h2>
+                        <p>Project C</p>
+                        <p>Project D</p>
+                    </div>
+                    <div id="upcoming" class="tab-content" style="display: none;">
+                        <h2>Upcoming Projects</h2>
+                        <p>Project E</p>
+                        <p>Project F</p>
+                    </div>
                 </div>
             </section>
             <!---------------CONTACT SECTION---------->
