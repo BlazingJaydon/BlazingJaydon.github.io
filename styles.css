@@ -16,6 +16,10 @@ html {
     font-size: 100%;
     margin: 0;
     padding: 0;
+    /* SETTING MAX WIDTH AND HEIGHT OF THE WEBPAGE */
+    max-width: 1920px;
+    max-height: 1080px;
+    /* ------------------------------------------- */
     box-sizing: border-box;
     scroll-behavior: smooth;
     scrollbar-width: auto;
@@ -829,6 +833,8 @@ button.resume:active {
         justify-content: space-evenly;
         margin-bottom: 1.5rem;
         margin-top: 1rem;
+        border: none;
+        border-bottom: solid #4d515c98 3px;
     }
 
     #projects .tab-button {
@@ -836,13 +842,24 @@ button.resume:active {
         position: relative;
         padding: 10px 20px;
         cursor: pointer;
-        background-color: #f1f1f1;
-        border: none;
+        font-size: 1.2rem;
+        font-family: "JetBrains Mono";
+        background-color: #282a3a;
+        color: #ccd6f6;
+        border: solid #282a3a 3px;
         outline: none;
     }
 
+    #projects .tab-button:hover {
+        transition: 0.3s ease-in-out;
+        background-color: #20222c;
+    }
+
     #projects .tab-button.active {
-        background-color: #ccc;
+        transition: 0.1s ease-in-out;
+        border: solid #615efc 3px;
+        border-radius: 3px;
+        color: #615efc;
     }
 
     #projects .tab-content {
