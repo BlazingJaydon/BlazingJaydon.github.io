@@ -48,6 +48,8 @@ const navMenu = document.getElementById("nav-menu"),
   twitterButton = document.getElementById("twitter-svg"),
   instaButton = document.getElementById("instagram-svg"),
   discordButton = document.getElementById("discord-svg"),
+  pennstateButton = document.getElementById("pennstate-icon"),
+  thiccLabButton = document.getElementById("THiCC-Lab"),
   MEEE = document.getElementById("MEEE");
 
 var navToggles = document.getElementsByClassName("page-links");
@@ -102,7 +104,17 @@ Array.prototype.forEach.call(navToggles, function (navToggle) {
   });
 });
 
-//------HELPER FUNCTIONS FOR SOCIALS LINKS------//
+///////------HELPER FUNCTIONS FOR EMPLOYMENT LINKS------///////
+
+pennstateButton.addEventListener("click", () => {
+  window.open("https://www.psu.edu/", "_blank");
+});
+
+thiccLabButton.addEventListener("click", () => {
+  window.open("https://sites.psu.edu/thicc/");
+});
+
+///////------HELPER FUNCTIONS FOR SOCIALS LINKS------///////
 
 document.addEventListener("DOMContentLoaded", function () {
   const githubSvg = document.getElementById("github-svg");

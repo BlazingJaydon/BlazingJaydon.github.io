@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 html {
     font-family: "JetBrains Mono", monospace;
@@ -99,7 +99,6 @@ nav {
     align-items: center;
     position: relative;
     display: flex;
-    /* right: 3.7rem; */
 }
 
 .nav {
@@ -127,7 +126,6 @@ nav > div > ul {
     padding: 0.2rem;
     display: block;
     color: #ccd6f6;
-    /* font-weight: 500; */
     position: relative;
 }
 
@@ -419,7 +417,7 @@ button.resume:active {
         display: flex;
         flex-direction: column;
         align-items: center;
-        scroll-margin-top: 5.5rem;
+        scroll-margin-top: 2.5rem;
     }
 
     #about .section-header {
@@ -683,11 +681,10 @@ button.resume:active {
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: center;
         height: 20rem;
         width: 40rem;
         align-self: flex-start;
-        margin: 2rem 0 0 5rem;
+        margin: 2rem 0 0 7rem;
     }
 
     #experience #employment-message {
@@ -705,7 +702,6 @@ button.resume:active {
         display: flex;
         flex-direction: column;
         position: relative;
-        align-items: center;
     }
 
     #experience .employment-icon {
@@ -713,15 +709,22 @@ button.resume:active {
         position: relative;
         height: 8rem;
         width: 8rem;
-        margin: 1rem 1rem 1rem 1rem;
+        margin: 1rem 1rem 0 1rem;
+        left: 5px;
         border-radius: 5px;
         align-self: flex-start;
+        transition: 0.2s;
+        border: solid 3px #615efc00;
+    }
+
+    #experience .employment-icon:hover {
+        cursor: pointer;
+        border: solid 3px #615efc;
     }
 
     #experience #penn-state {
         display: flex;
         position: relative;
-        align-items: center;
         margin-left: -5rem;
         flex-direction: column;
         width: 35rem;
@@ -730,15 +733,45 @@ button.resume:active {
         scale: 0.95;
     }
 
-    #experience #THiCC-Lab {
-        text-decoration: underline;
+    #experience #penn-state h2 #Lab-Postion {
+        font-family: "Inconsolata";
         align-self: flex-start;
         margin-bottom: 0;
+        transition: 0.15s;
+        font-size: 2px;
+    }
+
+    #experience #Lab-Position #betterAt {
+        font-family: "Roboto";
+        margin-right: -6px;
+        margin-left: -6px;
+    }
+
+    #experience #Lab-Position #THiCC-Lab {
+        display: initial;
+        border-bottom: 1.5px solid #615efc00;
+        transition: 0.15s ease-in-out;
+    }
+
+    #experience #Lab-Position #THiCC-Lab:hover {
+        cursor: pointer;
+        border-bottom: 1.5px solid #615efc;
     }
 
     #experience #THiCC-Lab-description {
+        margin-top: 0;
+        margin-left: 0;
         display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        padding-left: 1.3rem;
+        list-style-image: url(/imgs/arrow-right-double-line.svg);
+        list-style-position:;
         color: #8892b0;
+    }
+
+    #experience #THiCC-Lab-description .position-details {
+        margin-top: 10px;
     }
 
     /* ----Projects---- */
