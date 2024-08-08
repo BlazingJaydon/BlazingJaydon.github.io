@@ -860,6 +860,7 @@ button.resume:active {
         border: none;
         border-bottom: solid 2px #4d515c98;
         outline: none;
+        z-index: 0;
     }
 
     #projects .tab-button:hover {
