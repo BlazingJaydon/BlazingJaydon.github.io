@@ -160,7 +160,7 @@ function showProjects(projectType) {
     movingBorder.style.left = `${rect.left + window.scrollX}px`;
   }
 
-  //function removes the displays from all sections of the project content panels and then adds it back to the panel corresponding
+  ////function removes the displays from all sections of the project content panels and then adds it back to the panel corresponding
   //to the button that was pressed
   const contents = document.querySelectorAll(".tab-content");
   contents.forEach((content) => {

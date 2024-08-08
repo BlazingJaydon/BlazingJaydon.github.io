@@ -705,8 +705,9 @@ button.resume:active {
         display: flex;
         position: relative;
         align-self: flex-start;
-        padding: 1rem 1rem 1rem 2rem;
-        margin: 0;
+        padding: 1rem 1rem 1rem 1rem;
+        align-self: center;
+        right: 4rem;
         margin-bottom: 1rem;
         background-color: #20222c;
         border-radius: 5px;
@@ -787,7 +788,7 @@ button.resume:active {
         display: flex;
         flex-direction: column;
         align-items: center;
-        scroll-margin-top: 4rem;
+        /* scroll-margin-top: 4rem; */
     }
 
     #projects .section-header {
@@ -804,20 +805,6 @@ button.resume:active {
     #projects .section-header h1 {
         margin: 0 20px 0 2rem;
         font-size: 2rem;
-    }
-
-    #projects .section-content {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        position: relative;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 2.5rem;
-    }
-
-    #projects .section-content.align-left {
-        align-self: flex-start;
     }
 
     #projects .highlight {
@@ -888,6 +875,22 @@ button.resume:active {
 
     #projects .tab-content h2 {
         margin-top: 0;
+    }
+
+    #projects .section-content {
+        display: flex;
+        flex-direction: row;
+        width: calc(100% - 5rem);
+        height: 40rem;
+        background-color: #20222c;
+        position: relative;
+        border-radius: 5px;
+        justify-content: space-between;
+        margin-left: 2.5rem;
+    }
+
+    #projects .section-content.align-left {
+        align-self: flex-start;
     }
 
     /* ----Contact---- */
