@@ -834,7 +834,18 @@ button.resume:active {
         margin-bottom: 1.5rem;
         margin-top: 1rem;
         border: none;
-        border-bottom: solid #4d515c98 3px;
+    }
+
+    #projects .moving-border {
+        position: absolute;
+        height: 40px;
+        border: solid #615efc 3px;
+        border-bottom: solid #615efc 4px;
+        border-radius: 3px;
+        z-index: 100;
+        transition:
+            left 0.3s ease,
+            width 0.3s ease;
     }
 
     #projects .tab-button {
@@ -846,33 +857,33 @@ button.resume:active {
         font-family: "JetBrains Mono";
         background-color: #282a3a;
         color: #ccd6f6;
-        border: solid #282a3a 3px;
+        border: none;
+        border-bottom: solid 2px #4d515c98;
         outline: none;
     }
 
     #projects .tab-button:hover {
-        transition: 0.3s ease-in-out;
         background-color: #20222c;
+        border-bottom: solid 2px #ccd6f6;
+        border-radius: 3px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     #projects .tab-button.active {
-        transition: 0.1s ease-in-out;
-        border: solid #615efc 3px;
-        border-radius: 3px;
+        transition: 0.15s ease-in-out;
+        transition-delay: 200ms;
         color: #615efc;
+        background-color: #20222c;
+        border-bottom: solid 2px #4d515c98;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
     }
 
     #projects .tab-content {
         display: flex;
         flex-direction: column;
-        /* opacity: 1;
-        transition: 0.5s ease-in-out; */
     }
-
-    /* #projects .tab-content.show {
-        display: block;
-        opacity: 1;
-    } */
 
     #projects .tab-content h2 {
         margin-top: 0;

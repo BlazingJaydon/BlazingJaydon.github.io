@@ -119,17 +119,46 @@ thiccLabButton.addEventListener("click", () => {
 
 /////////////////////////////////////////////---PROJECTS SECTION---////////////////////////////////////////////////
 
+var upcomingTab = false; //global variable for tracking if the active tab is the 'upcoming tab'
+
 ////---Function that is executed when a user presses one of the tab buttons in the projects section---////
 function showProjects(projectType) {
-  //function removes all current active tags from the buttons and then adds it back to whichever button was pressed
+  //setting up the vaiables for the showProjects function
   const tabs = document.querySelectorAll(".tab-button");
+  const movingBorder = document.querySelector(".moving-border");
+
+  //function removes all current active tags from the buttons and then adds it back to whichever button was pressed
   tabs.forEach((tab) => {
     tab.classList.remove("active");
   });
 
-  document
-    .querySelector(`[onclick="showProjects('${projectType}')"]`)
-    .classList.add("active");
+  const activeTab = document.querySelector(
+    `[onclick="showProjects('${projectType}')"]`,
+  );
+  activeTab.classList.add("active");
+
+  //setting up the positioning and size of rect that the moving border is meant to be
+  const rect = activeTab.getBoundingClientRect();
+  const absoluteLeft = rect.left + window.scrollX;
+  console.log(
+    "Absolute left distance from the left side of the screen:",
+    absoluteLeft,
+  );
+  const containerRect = document.querySelector(".tabs").getBoundingClientRect();
+
+  if (projectType == "upcoming") {
+    upcomingTab = true;
+    //offseting the moving border is on the tabs b/c for some reason it does
+    const offset = 4;
+    const offset2 = 1;
+    movingBorder.style.width = `${rect.width - offset}px`;
+    movingBorder.style.left = `${rect.left + window.scrollX - offset2}px`;
+  } else {
+    upcomingTab = false;
+    const offset = 4;
+    movingBorder.style.width = `${rect.width - offset}px`;
+    movingBorder.style.left = `${rect.left + window.scrollX}px`;
+  }
 
   //function removes the displays from all sections of the project content panels and then adds it back to the panel corresponding
   //to the button that was pressed
@@ -150,6 +179,44 @@ function showProjects(projectType) {
     }, 50); // Slight delay to ensure display is set before opacity change
   }, 100); // Ensure this matches the transition duration of hiding the previous content
 }
+
+////// Event listeners for handling the project tabs when the window is changin //////
+// Initialize moving border to the first tab on page load
+window.onload = () => {
+  const activeTab = document.querySelector(".tab-button.active");
+  const rect = activeTab.getBoundingClientRect();
+  const absoluteLeft = rect.left + window.scrollX;
+  console.log(
+    "Absolute left distance from the left side of the screen:",
+    absoluteLeft,
+  );
+  const containerRect = document.querySelector(".tabs").getBoundingClientRect();
+  const movingBorder = document.querySelector(".moving-border");
+  const offset = 4;
+  movingBorder.style.width = `${rect.width - offset}px`;
+  movingBorder.style.left = `${rect.left - window.scrollX}px`;
+};
+
+// Add event listener to window resize to adjust moving border position and width
+window.addEventListener("resize", () => {
+  const movingBorder = document.querySelector(".moving-border");
+  const activeTab = document.querySelector(".tab-button.active");
+  const rect = activeTab.getBoundingClientRect();
+  const containerRect = document.querySelector(".tabs").getBoundingClientRect();
+
+  if (upcomingTab == true) {
+    upcomingTab = true;
+    //offseting the moving border is on the tabs b/c for some reason it does
+    const offset = 4;
+    const offset2 = 1;
+    movingBorder.style.width = `${rect.width - offset}px`;
+    movingBorder.style.left = `${rect.left + window.scrollX - offset2}px`;
+  } else {
+    const offset = 4;
+    movingBorder.style.width = `${rect.width - offset}px`;
+    movingBorder.style.left = `${rect.left + window.scrollX}px`;
+  }
+});
 
 /////////////////////////////////////////////---CONTACT SECTION---////////////////////////////////////////////////
 
