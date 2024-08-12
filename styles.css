@@ -774,7 +774,6 @@ button.resume:active {
         align-self: flex-start;
         padding-left: 1.3rem;
         list-style-image: url(/imgs/arrow-right-double-line.svg);
-        list-style-position:;
         color: #8892b0;
     }
 
