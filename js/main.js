@@ -127,6 +127,7 @@ function showProjects(projectType) {
   const tabs = document.querySelectorAll(".tab-button");
   const movingBorder = document.querySelector(".moving-border");
 
+  ///////---MOVING BORDER FUNCTIONALITY---///////
   //function removes all current active tags from the buttons and then adds it back to whichever button was pressed
   tabs.forEach((tab) => {
     tab.classList.remove("active");
@@ -180,7 +181,7 @@ function showProjects(projectType) {
   }, 100); // Ensure this matches the transition duration of hiding the previous content
 }
 
-////// Event listeners for handling the project tabs when the window is changin //////
+////// Event listeners for handling the project tabs when the window is changing //////
 // Initialize moving border to the first tab on page load
 window.onload = () => {
   const activeTab = document.querySelector(".tab-button.active");

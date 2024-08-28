@@ -881,15 +881,29 @@ button.resume:active {
         flex-direction: row;
         width: calc(100% - 5rem);
         height: 40rem;
-        background-color: #20222c;
+        background-color: #686d76;
+        border: solid 4px #000;
+        border-bottom: solid 5px #000;
         position: relative;
-        border-radius: 5px;
-        justify-content: space-between;
+        border-radius: 7px;
         margin-left: 2.5rem;
+        justify-content: space-evenly;
     }
 
     #projects .section-content.align-left {
         align-self: flex-start;
+    }
+
+    #projects .projects-tabs {
+        width: 35rem;
+    }
+
+    #projects .section-content-divide {
+        border-left: dashed 5px #000;
+    }
+
+    #projects .project-content-display {
+        width: 35rem;
     }
 
     /* ----Contact---- */
